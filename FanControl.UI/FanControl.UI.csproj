@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>FanControl</AssemblyName>
+    <!-- windows10.0.x 目标框架提供 Windows.Devices 投影，用于枚举蓝牙设备 -->
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <RootNamespace>FanControl.UI</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FanControl.Shared\FanControl.Shared.csproj" />
+    <ProjectReference Include="..\FanControl.Service\FanControl.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- 卫星资源必须与中性资源同名（去掉 .en-US 后缀），ResourceManager 才能按基名命中 -->
+    <EmbeddedResource Update="Resources\Strings.en-US.resx">
+      <LogicalName>FanControl.UI.Resources.Strings.resources</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="app.ico" />
+  </ItemGroup>
+
+</Project>

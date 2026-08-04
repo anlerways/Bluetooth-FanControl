@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Subtitle" xml:space="preserve">
+    <value>ESP32 蓝牙上位机</value>
+  </data>
+  <data name="Nav.Dashboard" xml:space="preserve">
+    <value>仪表盘</value>
+  </data>
+  <data name="Nav.Curve" xml:space="preserve">
+    <value>曲线编辑</value>
+  </data>
+  <data name="Nav.Settings" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="Nav.About" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="Quit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="Page.Dashboard" xml:space="preserve">
+    <value>仪表盘</value>
+  </data>
+  <data name="Page.Curve" xml:space="preserve">
+    <value>曲线编辑</value>
+  </data>
+  <data name="Page.Settings" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="Page.About" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="Status.Waiting" xml:space="preserve">
+    <value>等待数据…</value>
+  </data>
+  <data name="Status.Running" xml:space="preserve">
+    <value>运行中</value>
+  </data>
+  <data name="Status.TempError" xml:space="preserve">
+    <value>温度获取失败：{0}</value>
+  </data>
+  <data name="Dash.TileCpu" xml:space="preserve">
+    <value>CPU 温度</value>
+  </data>
+  <data name="Dash.TileGpu" xml:space="preserve">
+    <value>GPU 温度</value>
+  </data>
+  <data name="Dash.TilePwm" xml:space="preserve">
+    <value>目标 PWM</value>
+  </data>
+  <data name="Dash.TileRpm" xml:space="preserve">
+    <value>风扇转速</value>
+  </data>
+  <data name="Dash.TileMode" xml:space="preserve">
+    <value>控制模式</value>
+  </data>
+  <data name="Dash.TileStatus" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="Dash.Normal" xml:space="preserve">
+    <value>正常</value>
+  </data>
+  <data name="Dash.Abnormal" xml:space="preserve">
+    <value>异常</value>
+  </data>
+  <data name="Dash.Running" xml:space="preserve">
+    <value>运行中 · 上次 {0}</value>
+  </data>
+  <data name="Chart.Waiting" xml:space="preserve">
+    <value>等待数据…</value>
+  </data>
+  <data name="Chart.Cpu" xml:space="preserve">
+    <value>CPU</value>
+  </data>
+  <data name="Chart.Gpu" xml:space="preserve">
+    <value>GPU</value>
+  </data>
+  <data name="Chart.Pwm" xml:space="preserve">
+    <value>PWM</value>
+  </data>
+  <data name="Mode.Manual" xml:space="preserve">
+    <value>手动</value>
+  </data>
+  <data name="Mode.CpuTemp" xml:space="preserve">
+    <value>CPU 温度</value>
+  </data>
+  <data name="Mode.GpuTemp" xml:space="preserve">
+    <value>GPU 温度</value>
+  </data>
+  <data name="Mode.Mixed" xml:space="preserve">
+    <value>混合</value>
+  </data>
+  <data name="Mode.MixedAvg" xml:space="preserve">
+    <value>混合（平均）</value>
+  </data>
+  <data name="Mode.TargetRpm" xml:space="preserve">
+    <value>风扇转速映射</value>
+  </data>
+  <data name="Mode.SystemFan" xml:space="preserve">
+    <value>跟随系统</value>
+  </data>
+  <data name="Settings.Title" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="Settings.Loading" xml:space="preserve">
+    <value>加载中…</value>
+  </data>
+  <data name="Settings.Loaded" xml:space="preserve">
+    <value>已加载</value>
+  </data>
+  <data name="Settings.LoadFailed" xml:space="preserve">
+    <value>加载失败：{0}</value>
+  </data>
+  <data name="Settings.AutoSaved" xml:space="preserve">
+    <value>已自动保存</value>
+  </data>
+  <data name="Settings.SaveFailed" xml:space="preserve">
+    <value>保存失败：{0}</value>
+  </data>
+  <data name="Settings.Reload" xml:space="preserve">
+    <value>重新加载</value>
+  </data>
+  <data name="Settings.ManualReconnect" xml:space="preserve">
+    <value>手动重连</value>
+  </data>
+  <data name="Settings.ReconnectRequested" xml:space="preserve">
+    <value>正在重建连接…</value>
+  </data>
+  <data name="Settings.Language" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="Settings.LangZh" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="Settings.LangEn" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Settings.LangChanged" xml:space="preserve">
+    <value>语言已切换</value>
+  </data>
+  <data name="Settings.RestartRequired" xml:space="preserve">
+    <value>重启后生效</value>
+  </data>
+  <data name="Row.TempUnit" xml:space="preserve">
+    <value>温度单位</value>
+  </data>
+  <data name="Option.UnitCelsius" xml:space="preserve">
+    <value>摄氏度（°C）</value>
+  </data>
+  <data name="Option.UnitFahrenheit" xml:space="preserve">
+    <value>华氏度（°F）</value>
+  </data>
+  <data name="Card.TempFan" xml:space="preserve">
+    <value>温度与风扇</value>
+  </data>
+  <data name="Row.Source" xml:space="preserve">
+    <value>CPU 温度源</value>
+  </data>
+  <data name="Row.GpuSource" xml:space="preserve">
+    <value>GPU 温度源</value>
+  </data>
+  <data name="Row.Gpu" xml:space="preserve">
+    <value>GPU 选择</value>
+  </data>
+  <data name="Row.RpmSource" xml:space="preserve">
+    <value>风扇转速数据源</value>
+  </data>
+  <data name="Option.GpuSourceAuto" xml:space="preserve">
+    <value>跟随 CPU</value>
+  </data>
+  <data name="Option.GpuSourceNvidiaAdl" xml:space="preserve">
+    <value>NVIDIA-SMI / ADL</value>
+  </data>
+  <data name="Row.Mode" xml:space="preserve">
+    <value>控制模式</value>
+  </data>
+  <data name="Row.ManualPwm" xml:space="preserve">
+    <value>手动 PWM</value>
+  </data>
+  <data name="Row.SmoothEnable" xml:space="preserve">
+    <value>风扇转速平滑</value>
+  </data>
+  <data name="Row.Smooth" xml:space="preserve">
+    <value>风扇平滑系数</value>
+  </data>
+  <data name="Card.Comm" xml:space="preserve">
+    <value>通信</value>
+  </data>
+  <data name="Row.CommType" xml:space="preserve">
+    <value>通信方式</value>
+  </data>
+  <data name="Row.ComPort" xml:space="preserve">
+    <value>串口端口</value>
+  </data>
+  <data name="Row.Baud" xml:space="preserve">
+    <value>波特率</value>
+  </data>
+  <data name="Row.BleName" xml:space="preserve">
+    <value>BLE 设备名</value>
+  </data>
+  <data name="Row.BlePoll" xml:space="preserve">
+    <value>连接轮询（秒）</value>
+  </data>
+  <data name="Row.BleReconnect" xml:space="preserve">
+    <value>重连轮询（秒）</value>
+  </data>
+  <data name="Row.BleAuto" xml:space="preserve">
+    <value>自动重连</value>
+  </data>
+  <data name="Card.System" xml:space="preserve">
+    <value>系统</value>
+  </data>
+  <data name="Row.Poll" xml:space="preserve">
+    <value>采样轮询（秒）</value>
+  </data>
+  <data name="Row.Autostart" xml:space="preserve">
+    <value>开机自启</value>
+  </data>
+  <data name="Row.LogLocation" xml:space="preserve">
+    <value>日志存放位置</value>
+  </data>
+  <data name="Row.LogEnabled" xml:space="preserve">
+    <value>日志记录</value>
+  </data>
+  <data name="Option.LogData" xml:space="preserve">
+    <value>用户数据目录（data）</value>
+  </data>
+  <data name="Option.LogInstall" xml:space="preserve">
+    <value>安装目录</value>
+  </data>
+  <data name="Row.Theme" xml:space="preserve">
+    <value>主题</value>
+  </data>
+  <data name="Row.NotifyBle" xml:space="preserve">
+    <value>蓝牙断连通知</value>
+  </data>
+  <data name="Row.NotifyError" xml:space="preserve">
+    <value>温度异常通知</value>
+  </data>
+  <data name="Row.ConnState" xml:space="preserve">
+    <value>连接状态</value>
+  </data>
+  <data name="ConnState.Waiting" xml:space="preserve">
+    <value>等待连接</value>
+  </data>
+  <data name="ConnState.Connected" xml:space="preserve">
+    <value>已连接</value>
+  </data>
+  <data name="ConnState.Reconnecting" xml:space="preserve">
+    <value>重连中</value>
+  </data>
+  <data name="Option.SourceAtk" xml:space="preserve">
+    <value>ATKACPI（华硕）</value>
+  </data>
+  <data name="Option.SourceWmi" xml:space="preserve">
+    <value>WMI</value>
+  </data>
+  <data name="Option.SourceLhm" xml:space="preserve">
+    <value>LibreHardwareMonitor</value>
+  </data>
+  <data name="Option.SourceAida" xml:space="preserve">
+    <value>AIDA64</value>
+  </data>
+  <data name="Option.ModeManual" xml:space="preserve">
+    <value>手动</value>
+  </data>
+  <data name="Option.ModeCpu" xml:space="preserve">
+    <value>CPU 温度</value>
+  </data>
+  <data name="Option.ModeGpu" xml:space="preserve">
+    <value>GPU 温度</value>
+  </data>
+  <data name="Option.ModeMixed" xml:space="preserve">
+    <value>混合（最高温度）</value>
+  </data>
+  <data name="Option.ModeMixedAvg" xml:space="preserve">
+    <value>混合（平均）</value>
+  </data>
+  <data name="Option.ModeSystem" xml:space="preserve">
+    <value>跟随系统风扇</value>
+  </data>
+  <data name="Option.ModeRpm" xml:space="preserve">
+    <value>风扇转速映射（RPM）</value>
+  </data>
+  <data name="Option.CommCom" xml:space="preserve">
+    <value>串口</value>
+  </data>
+  <data name="Option.CommBle" xml:space="preserve">
+    <value>BLE</value>
+  </data>
+  <data name="Option.ThemeSystem" xml:space="preserve">
+    <value>跟随系统</value>
+  </data>
+  <data name="Option.ThemeLight" xml:space="preserve">
+    <value>浅色</value>
+  </data>
+  <data name="Option.ThemeDark" xml:space="preserve">
+    <value>深色</value>
+  </data>
+  <data name="Autostart.On" xml:space="preserve">
+    <value>已开启开机自启</value>
+  </data>
+  <data name="Autostart.Off" xml:space="preserve">
+    <value>已关闭开机自启</value>
+  </data>
+  <data name="Autostart.Failed" xml:space="preserve">
+    <value>开机自启设置失败：{0}</value>
+  </data>
+  <data name="Curve.Title" xml:space="preserve">
+    <value>曲线编辑器</value>
+  </data>
+  <data name="Curve.TypeTemp" xml:space="preserve">
+    <value>温度曲线</value>
+  </data>
+  <data name="Curve.TypeRpm" xml:space="preserve">
+    <value>转速曲线</value>
+  </data>
+  <data name="Curve.AxisRpm" xml:space="preserve">
+    <value>转速 RPM →</value>
+  </data>
+  <data name="Curve.SelectedRpm" xml:space="preserve">
+    <value>选中：{0} RPM / {1} %</value>
+  </data>
+  <data name="Curve.Hint" xml:space="preserve">
+    <value>拖拽图表中的点调整；双击空白处添加点；右键删除点。</value>
+  </data>
+  <data name="Curve.Add" xml:space="preserve">
+    <value>添加点</value>
+  </data>
+  <data name="Curve.Remove" xml:space="preserve">
+    <value>删除选中</value>
+  </data>
+  <data name="Curve.Reset" xml:space="preserve">
+    <value>重置默认</value>
+  </data>
+  <data name="Curve.Save" xml:space="preserve">
+    <value>保存曲线</value>
+  </data>
+  <data name="Curve.ResetDone" xml:space="preserve">
+    <value>已重置为默认曲线</value>
+  </data>
+  <data name="Curve.SaveFail" xml:space="preserve">
+    <value>保存失败：温度点必须严格递增且不能重复</value>
+  </data>
+  <data name="Curve.Saved" xml:space="preserve">
+    <value>已保存并生效</value>
+  </data>
+  <data name="Curve.Selected" xml:space="preserve">
+    <value>选中：{0} °C / {1} %</value>
+  </data>
+  <data name="Curve.NotSelected" xml:space="preserve">
+    <value>未选中</value>
+  </data>
+  <data name="Curve.Empty" xml:space="preserve">
+    <value>双击添加曲线点</value>
+  </data>
+  <data name="Curve.AxisX" xml:space="preserve">
+    <value>温度 ℃ →</value>
+  </data>
+  <data name="Curve.AxisXF" xml:space="preserve">
+    <value>温度 ℉ →</value>
+  </data>
+  <data name="Curve.AxisY" xml:space="preserve">
+    <value>PWM %</value>
+  </data>
+  <data name="About.Title" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="About.Subtitle" xml:space="preserve">
+    <value>单进程风扇控制（UI + 托盘 + 后台监控）</value>
+  </data>
+  <data name="About.Libraries" xml:space="preserve">
+    <value>引用库</value>
+  </data>
+  <data name="About.References" xml:space="preserve">
+    <value>参考项目</value>
+  </data>
+  <data name="About.Source" xml:space="preserve">
+    <value>开源地址</value>
+  </data>
+  <data name="About.SourceLink" xml:space="preserve">
+    <value>anlerways/Bluetooth-FanControl</value>
+  </data>
+  <data name="About.SourceFirmware" xml:space="preserve">
+    <value>anlerways/ESP32-LaptopFan（固件）</value>
+  </data>
+  <data name="About.SourcePending" xml:space="preserve">
+    <value>GitHub 仓库地址将在发布时补充。</value>
+  </data>
+  <data name="About.Update" xml:space="preserve">
+    <value>检查更新</value>
+  </data>
+  <data name="About.CheckUpdate" xml:space="preserve">
+    <value>检查更新</value>
+  </data>
+  <data name="About.UpdatePending" xml:space="preserve">
+    <value>点击检查更新</value>
+  </data>
+  <data name="About.UpdateClicked" xml:space="preserve">
+    <value>检查更新功能预留中，将在后续版本提供。</value>
+  </data>
+  <data name="About.Checking" xml:space="preserve">
+    <value>正在检查更新…</value>
+  </data>
+  <data name="About.UpToDate" xml:space="preserve">
+    <value>已是最新版本</value>
+  </data>
+  <data name="About.NewVersion" xml:space="preserve">
+    <value>发现新版本 {0}：</value>
+  </data>
+  <data name="About.OpenRelease" xml:space="preserve">
+    <value>打开下载页</value>
+  </data>
+  <data name="About.NoReleases" xml:space="preserve">
+    <value>仓库暂无发布版本</value>
+  </data>
+  <data name="About.UpdateFailed" xml:space="preserve">
+    <value>检查更新失败：{0}</value>
+  </data>
+  <data name="About.RefGHelper" xml:space="preserve">
+    <value>G-Helper（华硕设备控制参考）</value>
+  </data>
+  <data name="About.RefHardwareMonitor" xml:space="preserve">
+    <value>适用的开源硬件及参考</value>
+  </data>
+  <data name="About.RefLhm" xml:space="preserve">
+    <value>LibreHardwareMonitor（硬件监控库）</value>
+  </data>
+  <data name="Tray.Waiting" xml:space="preserve">
+    <value>FanControl · 等待数据</value>
+  </data>
+  <data name="Tray.TempError" xml:space="preserve">
+    <value>FanControl · 温度获取失败：{0}</value>
+  </data>
+  <data name="Notify.BleDisconnect" xml:space="preserve">
+    <value>蓝牙连接已断开，正在按重连轮询自动重试。</value>
+  </data>
+  <data name="Notify.TempError" xml:space="preserve">
+    <value>温度获取异常：{0}</value>
+  </data>
+</root>

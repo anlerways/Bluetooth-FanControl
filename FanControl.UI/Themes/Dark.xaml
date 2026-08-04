@@ -1,0 +1,18 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="WindowBgBrush" Color="#1C1C1C" />
+    <SolidColorBrush x:Key="SidebarBgBrush" Color="#242424" />
+    <SolidColorBrush x:Key="CardBgBrush" Color="#2E2E2E" />
+    <SolidColorBrush x:Key="TextPrimaryBrush" Color="#F0F0F0" />
+    <SolidColorBrush x:Key="TextSecondaryBrush" Color="#A8A8A8" />
+    <SolidColorBrush x:Key="BorderBrush" Color="#373737" />
+    <SolidColorBrush x:Key="BorderSecondBrush" Color="#2A2A2A" />
+    <SolidColorBrush x:Key="ChartBgBrush" Color="#232323" />
+    <SolidColorBrush x:Key="ChartGridBrush" Color="#464646" />
+    <SolidColorBrush x:Key="AccentBrush" Color="#3AAEEF" />
+    <SolidColorBrush x:Key="GpuBrush" Color="#00C8A0" />
+    <SolidColorBrush x:Key="ErrorBrush" Color="#FF7878" />
+    <SolidColorBrush x:Key="InputBgBrush" Color="#242424" />
+</ResourceDictionary>

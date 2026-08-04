@@ -1,0 +1,154 @@
+<UserControl
+    x:Class="FanControl.UI.Views.CurveEditorView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:loc="clr-namespace:FanControl.UI.Localization"
+    xmlns:controls="clr-namespace:FanControl.UI.Controls">
+    <UserControl.Resources>
+        <Style x:Key="ComboStyle" TargetType="ComboBox">
+            <Setter Property="Width" Value="260" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="Padding" Value="8,5" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Grid>
+                            <ToggleButton
+                                x:Name="Toggle"
+                                Focusable="False"
+                                ClickMode="Press"
+                                IsChecked="{Binding IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}">
+                                <Border
+                                    Background="White"
+                                    BorderBrush="#C8C8C8"
+                                    BorderThickness="1"
+                                    CornerRadius="6">
+                                    <Grid>
+                                        <ContentPresenter
+                                            Margin="10,0,28,0"
+                                            VerticalAlignment="Center"
+                                            Content="{TemplateBinding SelectionBoxItem}"
+                                            ContentTemplate="{TemplateBinding SelectionBoxItemTemplate}"
+                                            IsHitTestVisible="False" />
+                                        <Path
+                                            Data="M 0 0 L 4 4 L 8 0"
+                                            Stroke="#666666"
+                                            HorizontalAlignment="Right"
+                                            Margin="0,0,10,0"
+                                            VerticalAlignment="Center" />
+                                    </Grid>
+                                </Border>
+                            </ToggleButton>
+                            <Popup
+                                x:Name="Popup"
+                                IsOpen="{TemplateBinding IsDropDownOpen}"
+                                Placement="Bottom"
+                                AllowsTransparency="True">
+                                <Border
+                                    Background="White"
+                                    BorderBrush="#C8C8C8"
+                                    BorderThickness="1"
+                                    CornerRadius="6"
+                                    MinWidth="{TemplateBinding ActualWidth}"
+                                    MaxHeight="300"
+                                    Margin="0,2,0,0">
+                                    <ScrollViewer>
+                                        <ItemsPresenter />
+                                    </ScrollViewer>
+                                </Border>
+                            </Popup>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="ItemContainerStyle">
+                <Setter.Value>
+                    <Style TargetType="ComboBoxItem">
+                        <Setter Property="Foreground" Value="Black" />
+                        <Setter Property="Padding" Value="10,7" />
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="ComboBoxItem">
+                                    <Border x:Name="Bg" Background="Transparent" Padding="{TemplateBinding Padding}" CornerRadius="4" Margin="3,1">
+                                        <ContentPresenter />
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsHighlighted" Value="True">
+                                            <Setter TargetName="Bg" Property="Background" Value="#E5F1FB" />
+                                            <Setter Property="Foreground" Value="Black" />
+                                        </Trigger>
+                                        <Trigger Property="IsSelected" Value="True">
+                                            <Setter TargetName="Bg" Property="Background" Value="#F0F0F0" />
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Margin="0,0,0,8">
+            <TextBlock Text="{loc:Translate Curve.Hint}"
+                       Foreground="{DynamicResource TextSecondaryBrush}" Margin="0,4,0,0" />
+            <TextBlock x:Name="StatusText" Text="{loc:Translate Settings.Loading}" Foreground="{DynamicResource TextSecondaryBrush}" Margin="0,4,0,0" />
+            <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
+                <ComboBox
+                    x:Name="CurveCombo"
+                    Width="220"
+                    HorizontalAlignment="Left"
+                    Style="{StaticResource ComboStyle}" />
+            </StackPanel>
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="240" />
+            </Grid.ColumnDefinitions>
+
+            <Border Style="{StaticResource CardStyle}" Margin="0,0,8,0" Padding="6">
+                <controls:CurveChart x:Name="Chart" />
+            </Border>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <ListBox
+                    x:Name="PointList"
+                    Background="{DynamicResource CardBgBrush}"
+                    BorderBrush="{DynamicResource BorderBrush}"
+                    BorderThickness="1"
+                    SelectionChanged="PointList_SelectionChanged">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" Margin="4,3">
+                                <TextBlock Text="{Binding Display}" Foreground="{DynamicResource TextPrimaryBrush}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <TextBlock x:Name="SelectedInfo" Grid.Row="1" Margin="4,8,4,0"
+                           Foreground="{DynamicResource TextSecondaryBrush}" Text="未选中" />
+            </Grid>
+        </Grid>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,10,0,0">
+            <Button Content="{loc:Translate Curve.Add}" Style="{StaticResource SecondaryButtonStyle}" Click="Add_Click" />
+            <Button Content="{loc:Translate Curve.Remove}" Style="{StaticResource SecondaryButtonStyle}" Click="Remove_Click" />
+            <Button Content="{loc:Translate Curve.Reset}" Style="{StaticResource SecondaryButtonStyle}" Click="Reset_Click" />
+            <Button Content="{loc:Translate Curve.Save}" Style="{StaticResource AccentButtonStyle}" Click="Save_Click" />
+        </StackPanel>
+    </Grid>
+</UserControl>

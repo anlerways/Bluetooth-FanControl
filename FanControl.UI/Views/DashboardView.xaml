@@ -1,0 +1,91 @@
+<UserControl
+    x:Class="FanControl.UI.Views.DashboardView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:loc="clr-namespace:FanControl.UI.Localization"
+    xmlns:controls="clr-namespace:FanControl.UI.Controls">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock
+            x:Name="StatusText"
+            Text="{loc:Translate Status.Waiting}"
+            Foreground="{DynamicResource TextSecondaryBrush}"
+            Margin="2,0,0,8" />
+
+        <UniformGrid Grid.Row="1" Columns="2">
+            <Border Style="{StaticResource CardStyle}" Margin="4">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{loc:Translate Dash.TileCpu}" Foreground="{DynamicResource TextSecondaryBrush}" />
+                    <TextBlock x:Name="CpuValue" Grid.Row="1" Text="--" FontSize="22" FontWeight="Bold"
+                               Foreground="{DynamicResource TextPrimaryBrush}" Margin="0,6,0,0" />
+                </Grid>
+            </Border>
+            <Border Style="{StaticResource CardStyle}" Margin="4">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{loc:Translate Dash.TileGpu}" Foreground="{DynamicResource TextSecondaryBrush}" />
+                    <TextBlock x:Name="GpuValue" Grid.Row="1" Text="--" FontSize="22" FontWeight="Bold"
+                               Foreground="{DynamicResource TextPrimaryBrush}" Margin="0,6,0,0" />
+                </Grid>
+            </Border>
+            <Border Style="{StaticResource CardStyle}" Margin="4">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{loc:Translate Dash.TilePwm}" Foreground="{DynamicResource TextSecondaryBrush}" />
+                    <TextBlock x:Name="PwmValue" Grid.Row="1" Text="--" FontSize="22" FontWeight="Bold"
+                               Foreground="{DynamicResource TextPrimaryBrush}" Margin="0,6,0,0" />
+                </Grid>
+            </Border>
+            <Border Style="{StaticResource CardStyle}" Margin="4">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{loc:Translate Dash.TileRpm}" Foreground="{DynamicResource TextSecondaryBrush}" />
+                    <TextBlock x:Name="RpmValue" Grid.Row="1" Text="--" FontSize="22" FontWeight="Bold"
+                               Foreground="{DynamicResource TextPrimaryBrush}" Margin="0,6,0,0" />
+                </Grid>
+            </Border>
+            <Border Style="{StaticResource CardStyle}" Margin="4">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{loc:Translate Dash.TileMode}" Foreground="{DynamicResource TextSecondaryBrush}" />
+                    <TextBlock x:Name="ModeValue" Grid.Row="1" Text="--" FontSize="22" FontWeight="Bold"
+                               Foreground="{DynamicResource TextPrimaryBrush}" Margin="0,6,0,0" />
+                </Grid>
+            </Border>
+            <Border Style="{StaticResource CardStyle}" Margin="4">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="{loc:Translate Dash.TileStatus}" Foreground="{DynamicResource TextSecondaryBrush}" />
+                    <TextBlock x:Name="StatusValue" Grid.Row="1" Text="--" FontSize="22" FontWeight="Bold"
+                               Foreground="{DynamicResource TextPrimaryBrush}" Margin="0,6,0,0" />
+                </Grid>
+            </Border>
+        </UniformGrid>
+
+        <controls:TrendChart x:Name="Trend" Grid.Row="2" Margin="4,10,4,0" />
+    </Grid>
+</UserControl>

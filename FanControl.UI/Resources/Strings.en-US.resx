@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <data name="Subtitle" xml:space="preserve">
+    <value>ESP32 Bluetooth Host</value>
+  </data>
+  <data name="Nav.Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Nav.Curve" xml:space="preserve">
+    <value>Curve Editor</value>
+  </data>
+  <data name="Nav.Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Nav.About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Quit" xml:space="preserve">
+    <value>Quit</value>
+  </data>
+  <data name="Page.Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Page.Curve" xml:space="preserve">
+    <value>Curve Editor</value>
+  </data>
+  <data name="Page.Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Page.About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Status.Waiting" xml:space="preserve">
+    <value>Waiting for data…</value>
+  </data>
+  <data name="Status.Running" xml:space="preserve">
+    <value>Running</value>
+  </data>
+  <data name="Status.TempError" xml:space="preserve">
+    <value>Temperature read failed: {0}</value>
+  </data>
+  <data name="Dash.TileCpu" xml:space="preserve">
+    <value>CPU Temp</value>
+  </data>
+  <data name="Dash.TileGpu" xml:space="preserve">
+    <value>GPU Temp</value>
+  </data>
+  <data name="Dash.TilePwm" xml:space="preserve">
+    <value>Target PWM</value>
+  </data>
+  <data name="Dash.TileRpm" xml:space="preserve">
+    <value>Fan RPM</value>
+  </data>
+  <data name="Dash.TileMode" xml:space="preserve">
+    <value>Mode</value>
+  </data>
+  <data name="Dash.TileStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Dash.Normal" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Dash.Abnormal" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Dash.Running" xml:space="preserve">
+    <value>Running · last {0}</value>
+  </data>
+  <data name="Chart.Waiting" xml:space="preserve">
+    <value>Waiting for data…</value>
+  </data>
+  <data name="Chart.Cpu" xml:space="preserve">
+    <value>CPU</value>
+  </data>
+  <data name="Chart.Gpu" xml:space="preserve">
+    <value>GPU</value>
+  </data>
+  <data name="Chart.Pwm" xml:space="preserve">
+    <value>PWM</value>
+  </data>
+  <data name="Mode.Manual" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="Mode.CpuTemp" xml:space="preserve">
+    <value>CPU Temp</value>
+  </data>
+  <data name="Mode.GpuTemp" xml:space="preserve">
+    <value>GPU Temp</value>
+  </data>
+  <data name="Mode.Mixed" xml:space="preserve">
+    <value>Mixed</value>
+  </data>
+  <data name="Mode.MixedAvg" xml:space="preserve">
+    <value>Mixed (avg)</value>
+  </data>
+  <data name="Mode.TargetRpm" xml:space="preserve">
+    <value>Fan RPM mapping</value>
+  </data>
+  <data name="Mode.SystemFan" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="Settings.Title" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Settings.Loading" xml:space="preserve">
+    <value>Loading…</value>
+  </data>
+  <data name="Settings.Loaded" xml:space="preserve">
+    <value>Loaded</value>
+  </data>
+  <data name="Settings.LoadFailed" xml:space="preserve">
+    <value>Load failed: {0}</value>
+  </data>
+  <data name="Settings.AutoSaved" xml:space="preserve">
+    <value>Auto-saved</value>
+  </data>
+  <data name="Settings.SaveFailed" xml:space="preserve">
+    <value>Save failed: {0}</value>
+  </data>
+  <data name="Settings.Reload" xml:space="preserve">
+    <value>Reload</value>
+  </data>
+  <data name="Settings.ManualReconnect" xml:space="preserve">
+    <value>Reconnect</value>
+  </data>
+  <data name="Settings.ReconnectRequested" xml:space="preserve">
+    <value>Reconnecting…</value>
+  </data>
+  <data name="Settings.Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Settings.LangZh" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="Settings.LangEn" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Settings.LangChanged" xml:space="preserve">
+    <value>Language switched</value>
+  </data>
+  <data name="Settings.RestartRequired" xml:space="preserve">
+    <value>takes effect after restart</value>
+  </data>
+  <data name="Row.TempUnit" xml:space="preserve">
+    <value>Temperature unit</value>
+  </data>
+  <data name="Option.UnitCelsius" xml:space="preserve">
+    <value>Celsius (°C)</value>
+  </data>
+  <data name="Option.UnitFahrenheit" xml:space="preserve">
+    <value>Fahrenheit (°F)</value>
+  </data>
+  <data name="Card.TempFan" xml:space="preserve">
+    <value>Temperature &amp; Fan</value>
+  </data>
+  <data name="Row.Source" xml:space="preserve">
+    <value>CPU temperature source</value>
+  </data>
+  <data name="Row.GpuSource" xml:space="preserve">
+    <value>GPU temperature source</value>
+  </data>
+  <data name="Row.Gpu" xml:space="preserve">
+    <value>GPU selection</value>
+  </data>
+  <data name="Row.RpmSource" xml:space="preserve">
+    <value>Fan speed source</value>
+  </data>
+  <data name="Option.GpuSourceAuto" xml:space="preserve">
+    <value>Follow CPU</value>
+  </data>
+  <data name="Option.GpuSourceNvidiaAdl" xml:space="preserve">
+    <value>NVIDIA-SMI / ADL</value>
+  </data>
+  <data name="Row.Mode" xml:space="preserve">
+    <value>Control mode</value>
+  </data>
+  <data name="Row.ManualPwm" xml:space="preserve">
+    <value>Manual PWM</value>
+  </data>
+  <data name="Row.SmoothEnable" xml:space="preserve">
+    <value>Fan smoothing</value>
+  </data>
+  <data name="Row.Smooth" xml:space="preserve">
+    <value>Fan smoothing</value>
+  </data>
+  <data name="Card.Comm" xml:space="preserve">
+    <value>Communication</value>
+  </data>
+  <data name="Row.CommType" xml:space="preserve">
+    <value>Communication type</value>
+  </data>
+  <data name="Row.ComPort" xml:space="preserve">
+    <value>COM port</value>
+  </data>
+  <data name="Row.Baud" xml:space="preserve">
+    <value>Baud rate</value>
+  </data>
+  <data name="Row.BleName" xml:space="preserve">
+    <value>BLE device</value>
+  </data>
+  <data name="Row.BlePoll" xml:space="preserve">
+    <value>Poll (s)</value>
+  </data>
+  <data name="Row.BleReconnect" xml:space="preserve">
+    <value>Reconnect (s)</value>
+  </data>
+  <data name="Row.BleAuto" xml:space="preserve">
+    <value>Auto reconnect</value>
+  </data>
+  <data name="Card.System" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="Row.Poll" xml:space="preserve">
+    <value>Sample poll (s)</value>
+  </data>
+  <data name="Row.Autostart" xml:space="preserve">
+    <value>Run on startup</value>
+  </data>
+  <data name="Row.LogLocation" xml:space="preserve">
+    <value>Log location</value>
+  </data>
+  <data name="Row.LogEnabled" xml:space="preserve">
+    <value>Write logs</value>
+  </data>
+  <data name="Option.LogData" xml:space="preserve">
+    <value>User data (data)</value>
+  </data>
+  <data name="Option.LogInstall" xml:space="preserve">
+    <value>Install directory</value>
+  </data>
+  <data name="Row.Theme" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="Row.NotifyBle" xml:space="preserve">
+    <value>BLE disconnect alert</value>
+  </data>
+  <data name="Row.NotifyError" xml:space="preserve">
+    <value>Temp error alert</value>
+  </data>
+  <data name="Row.ConnState" xml:space="preserve">
+    <value>Connection</value>
+  </data>
+  <data name="ConnState.Waiting" xml:space="preserve">
+    <value>Waiting</value>
+  </data>
+  <data name="ConnState.Connected" xml:space="preserve">
+    <value>Connected</value>
+  </data>
+  <data name="ConnState.Reconnecting" xml:space="preserve">
+    <value>Reconnecting</value>
+  </data>
+  <data name="Option.SourceAtk" xml:space="preserve">
+    <value>ATKACPI (ASUS)</value>
+  </data>
+  <data name="Option.SourceWmi" xml:space="preserve">
+    <value>WMI</value>
+  </data>
+  <data name="Option.SourceLhm" xml:space="preserve">
+    <value>LibreHardwareMonitor</value>
+  </data>
+  <data name="Option.SourceAida" xml:space="preserve">
+    <value>AIDA64</value>
+  </data>
+  <data name="Option.ModeManual" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="Option.ModeCpu" xml:space="preserve">
+    <value>CPU Temp</value>
+  </data>
+  <data name="Option.ModeGpu" xml:space="preserve">
+    <value>GPU Temp</value>
+  </data>
+  <data name="Option.ModeMixed" xml:space="preserve">
+    <value>Mixed (max)</value>
+  </data>
+  <data name="Option.ModeMixedAvg" xml:space="preserve">
+    <value>Mixed (avg)</value>
+  </data>
+  <data name="Option.ModeSystem" xml:space="preserve">
+    <value>System fan</value>
+  </data>
+  <data name="Option.ModeRpm" xml:space="preserve">
+    <value>Fan RPM mapping</value>
+  </data>
+  <data name="Option.CommCom" xml:space="preserve">
+    <value>Serial</value>
+  </data>
+  <data name="Option.CommBle" xml:space="preserve">
+    <value>BLE</value>
+  </data>
+  <data name="Option.ThemeSystem" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="Option.ThemeLight" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="Option.ThemeDark" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="Autostart.On" xml:space="preserve">
+    <value>Auto-start enabled</value>
+  </data>
+  <data name="Autostart.Off" xml:space="preserve">
+    <value>Auto-start disabled</value>
+  </data>
+  <data name="Autostart.Failed" xml:space="preserve">
+    <value>Auto-start failed: {0}</value>
+  </data>
+  <data name="Curve.Title" xml:space="preserve">
+    <value>Curve Editor</value>
+  </data>
+  <data name="Curve.TypeTemp" xml:space="preserve">
+    <value>Temperature curve</value>
+  </data>
+  <data name="Curve.TypeRpm" xml:space="preserve">
+    <value>RPM curve</value>
+  </data>
+  <data name="Curve.AxisRpm" xml:space="preserve">
+    <value>Fan speed RPM →</value>
+  </data>
+  <data name="Curve.SelectedRpm" xml:space="preserve">
+    <value>Selected: {0} RPM / {1} %</value>
+  </data>
+  <data name="Curve.Hint" xml:space="preserve">
+    <value>Drag points to adjust; double-click empty area to add; right-click to remove.</value>
+  </data>
+  <data name="Curve.Add" xml:space="preserve">
+    <value>Add point</value>
+  </data>
+  <data name="Curve.Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Curve.Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="Curve.Save" xml:space="preserve">
+    <value>Save curve</value>
+  </data>
+  <data name="Curve.ResetDone" xml:space="preserve">
+    <value>Reset to default curve</value>
+  </data>
+  <data name="Curve.SaveFail" xml:space="preserve">
+    <value>Save failed: temperatures must be strictly increasing</value>
+  </data>
+  <data name="Curve.Saved" xml:space="preserve">
+    <value>Saved and applied</value>
+  </data>
+  <data name="Curve.Selected" xml:space="preserve">
+    <value>Selected: {0} °C / {1} %</value>
+  </data>
+  <data name="Curve.NotSelected" xml:space="preserve">
+    <value>Not selected</value>
+  </data>
+  <data name="Curve.Empty" xml:space="preserve">
+    <value>Double-click to add a point</value>
+  </data>
+  <data name="Curve.AxisX" xml:space="preserve">
+    <value>Temp ℃ →</value>
+  </data>
+  <data name="Curve.AxisXF" xml:space="preserve">
+    <value>Temp ℉ →</value>
+  </data>
+  <data name="Curve.AxisY" xml:space="preserve">
+    <value>PWM %</value>
+  </data>
+  <data name="About.Title" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="About.Subtitle" xml:space="preserve">
+    <value>Single-process fan control (UI + tray + service)</value>
+  </data>
+  <data name="About.Libraries" xml:space="preserve">
+    <value>Libraries</value>
+  </data>
+  <data name="About.References" xml:space="preserve">
+    <value>References</value>
+  </data>
+  <data name="About.Source" xml:space="preserve">
+    <value>Open source</value>
+  </data>
+  <data name="About.SourceLink" xml:space="preserve">
+    <value>anlerways/Bluetooth-FanControl</value>
+  </data>
+  <data name="About.SourceFirmware" xml:space="preserve">
+    <value>anlerways/ESP32-LaptopFan (firmware)</value>
+  </data>
+  <data name="About.SourcePending" xml:space="preserve">
+    <value>GitHub repository will be added on release.</value>
+  </data>
+  <data name="About.Update" xml:space="preserve">
+    <value>Check for updates</value>
+  </data>
+  <data name="About.CheckUpdate" xml:space="preserve">
+    <value>Check for updates</value>
+  </data>
+  <data name="About.UpdatePending" xml:space="preserve">
+    <value>Click to check for updates</value>
+  </data>
+  <data name="About.UpdateClicked" xml:space="preserve">
+    <value>Update check is reserved for a future version.</value>
+  </data>
+  <data name="About.Checking" xml:space="preserve">
+    <value>Checking for updates…</value>
+  </data>
+  <data name="About.UpToDate" xml:space="preserve">
+    <value>You're up to date</value>
+  </data>
+  <data name="About.NewVersion" xml:space="preserve">
+    <value>New version {0} available:</value>
+  </data>
+  <data name="About.OpenRelease" xml:space="preserve">
+    <value>Open release page</value>
+  </data>
+  <data name="About.NoReleases" xml:space="preserve">
+    <value>No releases yet</value>
+  </data>
+  <data name="About.UpdateFailed" xml:space="preserve">
+    <value>Update check failed: {0}</value>
+  </data>
+  <data name="About.RefGHelper" xml:space="preserve">
+    <value>G-Helper (ASUS control reference)</value>
+  </data>
+  <data name="About.RefHardwareMonitor" xml:space="preserve">
+    <value>Suitable open-source hardware &amp; reference</value>
+  </data>
+  <data name="About.RefLhm" xml:space="preserve">
+    <value>LibreHardwareMonitor (hardware library)</value>
+  </data>
+  <data name="Tray.Waiting" xml:space="preserve">
+    <value>FanControl · waiting for data</value>
+  </data>
+  <data name="Tray.TempError" xml:space="preserve">
+    <value>FanControl · temperature failed: {0}</value>
+  </data>
+  <data name="Notify.BleDisconnect" xml:space="preserve">
+    <value>BLE disconnected, retrying automatically.</value>
+  </data>
+  <data name="Notify.TempError" xml:space="preserve">
+    <value>Temperature read failed: {0}</value>
+  </data>
+</root>

@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/tests/">
+    <Project Path="tests/FanControl.Tests/FanControl.Tests.csproj" />
+  </Folder>
+  <Project Path="FanControl.Service/FanControl.Service.csproj" />
+  <Project Path="FanControl.Shared/FanControl.Shared.csproj" />
+  <Project Path="FanControl.UI/FanControl.UI.csproj" />
+</Solution>

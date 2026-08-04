@@ -1,0 +1,65 @@
+<UserControl
+    x:Class="FanControl.UI.Views.AboutView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:loc="clr-namespace:FanControl.UI.Localization">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="2,0,2,4">
+            <TextBlock x:Name="VersionText" Foreground="{DynamicResource TextSecondaryBrush}" Margin="0,4,0,12" />
+
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel>
+                    <TextBlock Text="{loc:Translate About.Libraries}" FontSize="13" FontWeight="Bold"
+                               Foreground="{DynamicResource TextPrimaryBrush}" Margin="0,0,0,8" />
+                    <TextBlock Foreground="{DynamicResource TextPrimaryBrush}" TextWrapping="Wrap" LineHeight="22"
+                               Text="LibreHardwareMonitorLib 0.9.6&#x0a;CommunityToolkit.Mvvm 8.4.2&#x0a;Microsoft.Extensions.Hosting 8.0.1&#x0a;System.IO.Ports 10.0.3&#x0a;System.Management 10.0.2&#x0a;Windows App SDK（Windows 通知）&#x0a;.NET 8" />
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel>
+                    <TextBlock Text="{loc:Translate About.References}" FontSize="13" FontWeight="Bold"
+                               Foreground="{DynamicResource TextPrimaryBrush}" Margin="0,0,0,8" />
+                    <TextBlock Foreground="{DynamicResource TextPrimaryBrush}" TextWrapping="Wrap" LineHeight="22">
+                        <Run Text="{loc:Translate About.RefGHelper}" />
+                        <Hyperlink NavigateUri="https://github.com/seerge/g-helper" RequestNavigate="Hyperlink_RequestNavigate">seerge/g-helper</Hyperlink>
+                        <LineBreak />
+                        <Run Text="{loc:Translate About.RefHardwareMonitor}" />
+                        <Hyperlink NavigateUri="https://www.bilibili.com/video/BV1Lr421M7u2/" RequestNavigate="Hyperlink_RequestNavigate">BV1Lr421M7u2</Hyperlink>
+                        <LineBreak />
+                        <Run Text="{loc:Translate About.RefLhm}" />
+                        <Hyperlink NavigateUri="https://github.com/LibreHardwareMonitor/LibreHardwareMonitor" RequestNavigate="Hyperlink_RequestNavigate">LibreHardwareMonitor</Hyperlink>
+                    </TextBlock>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel>
+                    <TextBlock Text="{loc:Translate About.Source}" FontSize="13" FontWeight="Bold"
+                               Foreground="{DynamicResource TextPrimaryBrush}" Margin="0,0,0,8" />
+                    <TextBlock Foreground="{DynamicResource TextPrimaryBrush}" TextWrapping="Wrap">
+                        <Hyperlink NavigateUri="https://github.com/anlerways/Bluetooth-FanControl" RequestNavigate="Hyperlink_RequestNavigate">
+                            <Run Text="{loc:Translate About.SourceLink}" />
+                        </Hyperlink>
+                        <LineBreak />
+                        <Hyperlink NavigateUri="https://github.com/anlerways/ESP32-LaptopFan" RequestNavigate="Hyperlink_RequestNavigate">
+                            <Run Text="{loc:Translate About.SourceFirmware}" />
+                        </Hyperlink>
+                    </TextBlock>
+                </StackPanel>
+            </Border>
+
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel>
+                    <TextBlock Text="{loc:Translate About.Update}" FontSize="13" FontWeight="Bold"
+                               Foreground="{DynamicResource TextPrimaryBrush}" Margin="0,0,0,8" />
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="{loc:Translate About.CheckUpdate}" Style="{StaticResource SecondaryButtonStyle}" Click="CheckUpdate_Click" />
+                        <TextBlock x:Name="UpdateStatus" Foreground="{DynamicResource TextSecondaryBrush}"
+                                   VerticalAlignment="Center" Margin="12,0,0,0" Text="{loc:Translate About.UpdatePending}" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
